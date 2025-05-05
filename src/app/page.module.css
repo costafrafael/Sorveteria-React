@@ -1,0 +1,106 @@
+.secaobanner {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../public/banner-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-color: rgb(249, 219, 121);
+}
+
+.textobanner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.textobanner h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.secaosabores, .secaosobre, .secaoeventos {
+    width: 100%;
+    display: flex;
+}
+
+.imagem {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.containertexto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 50px;
+}
+
+.containertexto h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.containertexto span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.containertexto p {
+    max-width: 600px;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .textobanner h1 {
+        font-size: 60px;
+    }
+
+    .secaosabores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .containertexto {
+        width: 100%;
+        padding: 100px 20px;
+    }
+
+    .secaoeventos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .secaosobre {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .textobanner h1 {
+        font-size: 40px;
+    }
+    
+    .secaobanner {
+        background-size: 400px;
+    }
+}
+
+

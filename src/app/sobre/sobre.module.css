@@ -1,0 +1,104 @@
+.containerprincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secaobannersobre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../public/banner-sobre.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secaobannersobre div {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secaobannersobre div h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px #474747;
+    text-align: center;
+}
+
+.secaosobre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secaosobre div {
+    width: 100%;
+    max-width: 1024px;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.secaosobre span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.secaosobre p {
+    text-align: center;
+    line-height: 26px;
+}
+
+.secaoimagem {
+    display: flex;
+}
+
+.secaoimagem div {
+    display: flex;
+    padding: 40px;
+    width: 100%;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .secaobannersobre div h1 {
+      font-size: 60px;
+    }
+  
+    .secaoimagem div {
+      flex-direction: column;
+    }
+  
+    .img {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .secaobannersobre div h1 {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 525px){
+    .secaobannersobre div h1 {
+      font-size: 40px;
+    }
+}

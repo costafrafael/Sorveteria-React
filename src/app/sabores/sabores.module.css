@@ -1,0 +1,97 @@
+.containerprincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secaobanner {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../public/banner-sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulobanner {
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulobanner h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.secaosabores {
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.secaosabores h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.containersorvetes {
+    width: 100%;
+    max-width: 1024px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containersorvetes div {
+    flex: 1 1 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    line-height: 26px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px 2px #d9dde1;
+}
+
+.imgsvt {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .titulobanner h1 {
+      font-size: 60px;
+    }
+  
+    .containersorvetes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .containersorvetes div{
+      padding: 20px 40px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 425px){
+    .titulosabores h1 {
+      font-size: 45px;
+    }
+  }
